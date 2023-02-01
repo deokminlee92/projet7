@@ -11,7 +11,7 @@ export default function Card({ id, cover, title }) {
       //webpack 을 이용한 backgroundImage 를 문자열로 제공
       style={{ backgroundImage: `url(${cover})`, backgroundSize: "cover" }}
     >
-      <div className="care-linearGradient"></div>
+      <div className="card-linearGradient"></div>
       <div className="card-title">
         <h2>{title}</h2>
       </div>

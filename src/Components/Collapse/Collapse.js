@@ -5,12 +5,9 @@ import arrowDown from "../../assets/Images/ArrowDown.png";
 export default function Collapse({ title, content }) {
   //초기 값을 닫아두기 위해서 false
   const [isOpen, setIsOpen] = useState(false);
-  // const CollapseActivateButton = () => {
-  //   setIsOpen(preValue => !preValue)
-  // }
 
   return (
-    <div className="collpase-container">
+    <div className="collapse-container">
       <div
         className="collapse-title"
         onClick={() => {

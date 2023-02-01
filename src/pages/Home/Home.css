@@ -6,13 +6,13 @@
   position: relative;
 }
 .card-container {
-  width: 100%;
+  width: 90%;
   flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 100px;
-  padding: 0px 100px;
+  margin: 1% 5%;
+  background-color: #f7f7f7;
 }
 @media screen and (max-width: 1024px) {
   .card-container {
@@ -24,81 +24,3 @@
     padding: 0 20px;
   }
 }
-
-/* 
-.homeCard {
-  width: 90%;
-  height: 100%;
-  margin: 30px 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #f6f6f6;
-  border-radius: 25px;
-}
-
-.homeCard > figure {
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 340px;
-  height: 100%;
-  min-height: 340px;
-  max-height: 340px;
-  border-radius: 10px;
-  margin: 4% 1.2%;
-  cursor: pointer;
-}
-
-figure > img {
-  height: 100%;
-  min-height: 340px;
-  border-radius: 10px;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-figcaption > h2 {
-  position: absolute;
-  margin: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0 20px 15px 15px;
-  font-size: 18px;
-  text-align: left;
-  color: #fff;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
-  font-family: "Montserrat";
-}
-
-/**************Media Queries**********/
-/* 
-@media all and (max-width: 768px) {
-  .homeCard {
-    width: 100%;
-    margin: 10px;
-    background: none;
-    margin: 10px 0;
-  }
-
-  .homeCard > figure {
-    width: 90%;
-    max-width: 90%;
-    height: 225px;
-  }
-
-  figure > img {
-    width: 100%;
-  }
-
-  figcaption > h2 {
-    padding-left: 9%;
-  }
-} */

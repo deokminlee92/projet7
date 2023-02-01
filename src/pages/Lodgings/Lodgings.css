@@ -1,0 +1,183 @@
+/* Footer 바닥에 고정 */
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.Lodgings {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.lodgingsDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 92%;
+  margin: 2% 5% 2% 5%;
+}
+
+.lodgingsDetailsLogement {
+  width: 70%;
+  margin: 20px 0;
+}
+
+.logementTitle {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.logementLocation {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 7px;
+  color: #ff6060;
+}
+
+.logementTags {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #ff6060;
+  border-radius: 10px;
+  padding: 7px;
+  min-width: 115px;
+  width: auto;
+  height: 25px;
+}
+
+.lodgingsDetailsHost {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+.hostInformations {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.hostInformationsName {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 20px;
+  text-align: right;
+  color: #ff6060;
+  width: 95px;
+}
+
+.hostInformationsPicture {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+
+.hostInformationsRating {
+  margin-right: -30px;
+}
+
+.lodgingsCollapses {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+  column-gap: 8%;
+  margin: 0 5% 0 5%;
+}
+
+.lodgingsDetailsDescriptionContent {
+  list-style-type: none;
+  padding-left: 0;
+  font-weight: 400;
+}
+
+/***************************Media Queries***********************/
+
+@media all and (max-width: 768px) {
+  .lodgingsDetails {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+  }
+
+  .lodgingsDetailsLogement {
+    width: 100%;
+  }
+
+  .logementTitle {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .logementLocation {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .logementTags {
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    min-width: 100px;
+    align-items: center;
+  }
+
+  .tag {
+    border-radius: 5px;
+    font-size: 10px;
+    height: 18px;
+    min-width: 85px;
+    width: auto;
+    margin: 0;
+  }
+
+  .lodgingsDetailsHost {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+  }
+
+  .hostInformations {
+    margin-bottom: 10px;
+  }
+
+  .hostInformationsName {
+    font-size: 12px;
+  }
+
+  .hostInformationsPicture {
+    width: 32px;
+    height: 32px;
+  }
+
+  .lodgingsCollapses {
+    flex-direction: column;
+    margin: auto;
+    row-gap: 15px;
+    width: 87%;
+  }
+
+  .lodgingsDetailsCollapsesContent {
+    font-weight: 400;
+    min-height: 0;
+  }
+}

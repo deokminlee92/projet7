@@ -1,0 +1,15 @@
+.Star,
+.StarEmpty {
+  width: 30px;
+  height: 30px;
+}
+
+/*******************Media Queries****************/
+
+@media all and (max-width: 768px) {
+  .Star,
+  .StarEmpty {
+    width: 15px;
+    height: 15px;
+  }
+}

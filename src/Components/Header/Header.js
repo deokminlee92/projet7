@@ -16,7 +16,7 @@ export default function Header() {
           </li>
           <li>
             <Link to="/about" className="LinkeHeaderAbout">
-              About
+              A Propos
             </Link>
           </li>
         </ul>

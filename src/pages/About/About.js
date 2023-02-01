@@ -2,15 +2,16 @@ import React from "react";
 import Header from "../../Components/Header/Header";
 import Banner from "../../Components/Banner/Banner";
 import Footer from "../../Components/Footer/Footer";
-import ImgBannerHome from "../../assets/Images/ImgBannerHome.png";
+import AboutBackground from "../../assets/Images/AboutBackground1.png";
 import Collapse from "../../Components/Collapse/Collapse";
+import "./About.css";
 
 function About() {
   return (
-    <div className="header-Container">
+    <div className="about-container">
       <Header />
-      <Banner src={ImgBannerHome} />
-      <div className="collaps-container">
+      <Banner src={AboutBackground} alt="montagne" title="" />
+      <div className="collapse-bloc">
         <Collapse
           title="Fiabilité"
           content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes. "

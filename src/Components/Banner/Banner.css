@@ -1,3 +1,7 @@
+* {
+  font-family: "Montserrat";
+}
+
 .banner {
   width: 100%;
   height: 250px;
@@ -27,6 +31,7 @@
   opacity: 0.7;
   position: relative;
   width: 100%;
+  height: 100%;
 }
 
 .banner h2 {
@@ -50,11 +55,18 @@
 @media screen and (max-width: 768px) {
   .banner {
     height: 120px;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .banner h2 {
     font-size: 24px;
-    display: flex;
-    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+  }
+
+  /* 원본 고정 */
+  .banner .background {
+    width: 90%;
+    height: 140px;
+    white-space: normal;
+    border-radius: 25px;
   }
 }

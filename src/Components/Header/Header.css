@@ -1,5 +1,6 @@
 * {
   font-family: "Montserrat";
+  font-weight: 500;
 }
 
 nav {
@@ -63,10 +64,10 @@ nav li:hover {
 
 /***********************************Media Queries*****************************/
 
-@media all and (max-width: 345px) {
+/* @media all and (max-width: 345px) {
   nav {
     flex-direction: column;
     row-gap: 20px;
     margin-bottom: 0;
   }
-}
+} */
