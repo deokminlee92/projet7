@@ -3,9 +3,7 @@ import { useState } from "react";
 import arrowDown from "../../assets/Images/ArrowDown.png";
 
 export default function Collapse({ title, content }) {
-  //초기 값을 닫아두기 위해서 false
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className="collapse-container">
       <div

@@ -1,5 +1,3 @@
-// 코드 연구해보고 다시 짜볼 것
-
 import "./Lodgings.css";
 import Lodging from "../../Components/Lodging/Lodging";
 import Rating from "../../Components/Rating/Rating";
@@ -11,17 +9,9 @@ import Footer from "../../Components/Footer/Footer";
 
 export default function Lodgings() {
   const { id } = useParams();
-  // console.log({ id });
-
-  //find() pour comparer l'id & l'id passé dans l'URL
   const lodgingsContent = Logements.find((e) => e.id === id);
-
-  //Création de la variable contenant l'objet avec les caractéristiques du logement ou un objet vide
   const { title, location, tags, host, rating, description, equipments } =
     lodgingsContent || {};
-  // console.log(lodgingsContent, "lodgingsContent");
-
-  //Recherche s'il y a bien un contenu
   return lodgingsContent ? (
     <main className="main-container">
       <Lodging />
@@ -53,7 +43,6 @@ export default function Lodgings() {
           </div>
         </div>
       </section>
-      {/* Caractéristiques du logement */}
       <section className="lodgingsCollapses">
         <Collapse
           className="lodgingsCollContent"
@@ -64,7 +53,7 @@ export default function Lodgings() {
         />
         <Collapse
           className="lodgingsCollContent"
-          title="Equipments"
+          title="Equipements"
           content={
             <ul className="lodgingsDetailsDescriptionContent">
               {equipments.map((equip, index) => {

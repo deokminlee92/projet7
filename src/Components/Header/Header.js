@@ -10,8 +10,7 @@ export default function Header() {
         <ul>
           <li>
             <Link to="/" className="LinkHeaderLogo">
-              {" "}
-              Acceuil{" "}
+              Acceuil
             </Link>
           </li>
           <li>

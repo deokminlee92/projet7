@@ -4,8 +4,6 @@
   height: 30px;
 }
 
-/*******************Media Queries****************/
-
 @media all and (max-width: 768px) {
   .Star,
   .StarEmpty {

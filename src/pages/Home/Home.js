@@ -18,7 +18,6 @@ function Home() {
       <div className="card-container">
         {lodgingsData.map((logements, index) => (
           <Card
-            // key에 대한 안정적인 값이 없으므로 index로 설정
             key={index}
             id={logements.id}
             title={logements.title}
