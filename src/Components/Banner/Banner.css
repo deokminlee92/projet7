@@ -57,16 +57,21 @@
     height: 120px;
     padding: 0 10px;
   }
+
   .banner h2 {
     font-size: 24px;
-    /* justify-content: flex-start; */
   }
 
-  /* 원본 고정 */
   .banner .background {
-    width: 90%;
+    width: 100%;
     height: 140px;
     white-space: normal;
     border-radius: 25px;
+  }
+
+  .bannerImg {
+    max-width: auto;
+    height: 100%;
+    object-fit: cover;
   }
 }

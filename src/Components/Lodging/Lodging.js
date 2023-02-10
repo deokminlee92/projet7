@@ -11,6 +11,9 @@ export default function Lodging() {
   const { id } = useParams();
   const { pictures } = Logements.find((logpic) => logpic.id === id);
   const [currentPhoto, setCurrentPhoto] = useState(0);
+
+  console.log({ id }, "id");
+
   const nextPicture = () => {
     setCurrentPhoto(
       currentPhoto === pictures.length - 1 ? 0 : currentPhoto + 1
@@ -43,6 +46,7 @@ export default function Lodging() {
         />
       )}
       {pictures.map((picture, index) => {
+        console.log(picture, index, "picture, index");
         return (
           <div key={index}>
             {index === currentPhoto && (

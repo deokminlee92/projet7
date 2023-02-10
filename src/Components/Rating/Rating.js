@@ -3,6 +3,7 @@ import StarEmpty from "../../assets/Images/StarEmpty.png";
 import "./Rating.css";
 
 export default function Rating(rate) {
+  console.log(rate, "rate");
   const star = [1, 2, 3, 4, 5];
   return star.map((starnumber, index) =>
     starnumber <= rate.rating ? (
@@ -12,5 +13,3 @@ export default function Rating(rate) {
     )
   );
 }
-
-console.log(Rating);

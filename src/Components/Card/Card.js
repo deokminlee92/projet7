@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./Card.css";
 
 export default function Card({ id, cover, title }) {
+  console.log(id, cover, title);
   return (
     <Link
       to={`logements/${id}`}
