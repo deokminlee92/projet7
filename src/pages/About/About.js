@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../../Components/Header/Header";
 import Banner from "../../Components/Banner/Banner";
 import Footer from "../../Components/Footer/Footer";
-import AboutBackground from "../../assets/Images/AboutBackground1.png";
+import AboutBackground from "../../assets/Images/ImgBannerAboutMobile1.jpg";
+// import AboutBackground from "../../assets/Images/AboutBackground1.png";
 import Collapse from "../../Components/Collapse/Collapse";
 import "./About.css";
 
